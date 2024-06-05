@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+header{
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(img/IN-en-20240527-popsignuptwoweeks-perspective_alpha_website_large.webp);
+    height: 90vh;
+    background-size:cover;
+    background-position: 50%;
+     
+}
+
+nav img{
+    width: 13%;
+    
+}
+
+.nav-button{
+    background: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    padding:5px 16px;
+
+}
+
+.nav-button:hover {
+    background: rgb(190, 15, 20);
+}
+
+/* main-Section */
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.main-first-p {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.main-second-p {
+
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+/* form-header */
+form {
+    width: 60%;
+}
+
+
+form #inputFloat {
+  
+    background: transparent;
+}
+
+form .form-control:focus {
+    border-color: white;
+    box-shadow: none;
+    border-width: medium;
+}
+
+form.form-floating>.form-control :focus ~ label {
+    color: rgba(250, 255, 255, 0.7);
+}
+
+form.form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+form .form-floating{
+    width: 30%;
+
+}
+
+form #floatingInput {
+    background: transparent;
+}
+
+form label{
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+}
+
+.get-start-btn {
+    height: 60px;
+    font-size: 1.5rem;
+    padding: 0px 25px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+/* enjoy Section  */
+
+.watch-section{
+    background-color: black;
+    border-top: 5px solid grey;
+    border-top: 5px solid grey;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.section-para {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+/* faq section */
+
+.faq-section h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.accord {
+    background-color: black;
+}
+
+.faq-section button {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+.faq-section .container h2  {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.faq-section .accordion {
+    --bs-accordion-color: rgb(98, 96, 96);
+    --bs-accordion-bg: rgb(252, 243, 243);
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-radius: none;
+}
+
+.faq-section .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.faq-section .accordion-item .accordion-body{
+    background-color: rgb(45, 45, 45);
+}
+
+.faq-section .accordion-button {
+    background-color: rgb(45, 45, 45);
+    
+}
+
+.faq-section .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+.faq-section .accordion-item {
+    border: none;
+}
+
+.faq-section .accordion-button:hover {
+    background-color: rgb(65,65,65);
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    background-color: rgb(65,65,65);
+    color: rgb(255,255,255);
+}
+
+.faq-section .accordion-button::after {
+    content: "+";
+    background-image: none;
+    position: absolute;
+    height: 30px;
+    font-size: 50px;
+    top: 5px;
+    right: 45px;
+}
+
+.faq-section .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+    content: "\00d7";
+}
+
+
+/* footer  */
+
+footer {
+    border-top: 5px solid #232323;
+}
+
+footer p,
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer select {
+    background: transparent;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    appearance: none;
+    border-radius: 5px;
+}
+
+footer img {
+    filter: invert();
+    top: 8px;
+    left: 12px;
+}
+
+footer .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    top: 15px;
+    right: -115px;
+}
+.foot-background {
+    background-color: black;
+}
+
+
+
+/* mobile devices */
+
+@media only screen and (max-width:992px){
+    nav img{
+        width: 17%;
+    }
+    .main-title,
+    .section-title{
+        font-size:2rem ;
+        font-weight: 700;
+    }
+
+
+
+    .main-first-p,
+    .main-second-p
+    .section-para,
+    .faq-section h3 {
+        font-size: 1.125rem;
+
+    }
+
+    form .form-floating { 
+        width: 90%;
+    }
+
+
+
+
+
+
+}
+
+@media only screen and(max-width:768px){
+
+    nav img {
+        width: 25%;
+    }
+
+    header{
+        height: 100vh;
+    }
+    form .form-floating { 
+        width: 90%;
+    }
+
+
+
+}
+
+
+@media only screen and(max-width:576px){
+    nav img{
+        width: 35%;
+        }
+
+        header {
+            height: 110vh;
+        }
+        form .form-floating{ 
+            width: 90%;
+        }
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
